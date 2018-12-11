@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">CaPPTalk</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_sample_1">CaPPTalk</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">sample_title</string>
+    <string name="nav_header_subtitle">sample_subtitile</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_chat">Chat</string>
+    <string name="title_group">Group</string>
+    <string name="title_ranking">Rank</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

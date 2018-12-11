@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/chatActivity_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+
+        <TextView
+            android:id="@+id/chatActivity_textView_toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/jejufont"
+            android:textStyle="bold"
+            android:text="ToolBar Title"
+            android:textSize="20dp"
+            android:layout_gravity="center"/>
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <EditText
+        android:id="@+id/chatActivity_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@id/chatActivity_button_send"
+        android:layout_toStartOf="@id/chatActivity_button_send"/>
+
+    <Button
+        android:id="@+id/chatActivity_button_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:stateListAnimator="@null"
+        android:text="보내기" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/chatActivity_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/chatActivity_button_send"
+        android:layout_below="@id/chatActivity_toolbar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <FrameLayout
+        android:id="@+id/chatActivity_frameLayout_sidebar_cover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.75"
+            android:background="#202735"/>
+
+        <FrameLayout
+            android:id="@+id/chatActivity_frameLayout_sidebar_blank"
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:alpha="0.1"
+            android:background="#202735"
+            android:visibility="gone"/>
+
+        <FrameLayout
+            android:id="@+id/chatActivity_frameLayout_sidebar_main"
+            android:layout_width="320dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:background="#ffffff" />
+
+    </FrameLayout>
+
+</RelativeLayout>

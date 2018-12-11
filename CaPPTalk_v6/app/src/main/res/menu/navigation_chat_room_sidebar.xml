@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_qna"
+        android:icon="@drawable/qna_2x"
+        android:title="QnA"/>
+
+    <item
+        android:id="@+id/action_group"
+        android:icon="@drawable/group_2x"
+        android:title="Group"/>
+
+</menu>

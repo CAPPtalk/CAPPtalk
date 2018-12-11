@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:background="#dfbe01"
+    android:layout_gravity="center"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/warning"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:src="@drawable/warning"
+            android:scaleType="fitXY"/>
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/warning"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="경 고 장"
+            android:fontFamily="@font/jejufont"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_below="@+id/textView1"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:fontFamily="@font/jejufont"
+            android:text="위와 같은 내용으로 신고 당하셨습니다.
+  한번 더 신고 받을 시 영구 제명 당하오니 주의하시기 바랍니다." />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_below="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/back3"
+            android:fontFamily="@font/jejufont"
+            android:textColor="@color/common_google_signin_btn_text_light_default"
+            android:textStyle="bold"
+            android:text="확인" />
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

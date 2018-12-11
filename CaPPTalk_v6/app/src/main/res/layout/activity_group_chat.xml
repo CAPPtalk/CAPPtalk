@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GroupChatActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/groupChatActivity_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+
+        <TextView
+            android:id="@+id/groupChatActivity_textView_toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ToolBar Title"
+            android:textSize="25dp"
+            android:layout_gravity="center"/>
+
+    </android.support.v7.widget.Toolbar>
+    <Button
+        android:id="@+id/group_button_exit"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@drawable/exit_1x"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dp"/>
+
+    <EditText
+        android:id="@+id/groupChatActivity_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@id/groupChatActivity_button_send"
+        android:layout_toStartOf="@id/groupChatActivity_button_send"/>
+
+    <Button
+        android:id="@+id/groupChatActivity_button_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:text="보내기" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/groupChatActivity_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/groupChatActivity_button_send"
+        android:layout_below="@id/groupChatActivity_toolbar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:id="@+id/groupChatActivity_frameLayout_sidebar"
+        android:layout_width="330dp"
+        android:layout_height="match_parent"
+        android:layout_above="@id/groupChatActivity_button_send"
+        android:layout_below="@id/groupChatActivity_toolbar"
+        android:orientation="vertical"
+        android:layout_alignParentRight="true"
+        android:background="#ffffff"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Side Menu"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

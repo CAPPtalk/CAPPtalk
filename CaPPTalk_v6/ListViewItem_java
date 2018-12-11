@@ -1,0 +1,37 @@
+package com.example.jangheejun.capptalk;
+
+import android.graphics.drawable.Drawable;
+
+public class ListViewItem {
+    private Drawable profile;
+    private String email_text;
+    private String nickname_text;
+    private int point_int;
+
+    public void setProfile(Drawable image){
+        profile = image;
+    }
+    public void setEmail(String email){
+        email_text = email;
+    }
+    public void setNickname(String nick){
+        nickname_text = nick;
+    }
+    public void setPoint(int point){
+        point_int = point;
+    }
+
+    public Drawable getProfile(){
+        return this.profile;
+    }
+    public String getEmail(){
+        return this.email_text;
+    }
+    public String getNickname(){
+        return this.nickname_text;
+    }
+    public int getPoint(){
+        return this.point_int;
+    }
+
+}

@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:padding="7dp"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/item_qna_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:orientation="vertical"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:id="@+id/item_qna_name"
+                    android:text="title"
+                    android:textColor="#000"
+                    android:textSize="18sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/item_qna_content"
+                    android:text="content"
+                    android:textColor="#555" />
+
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/item_qna_good_img"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/good"
+                    android:scaleType="fitXY"/>
+                <ImageView
+                    android:id="@+id/item_qna_bad_img"
+                    android:layout_toRightOf="@+id/item_qna_good_img"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/bad"
+                    android:scaleType="fitXY"/>
+                <TextView
+                    android:layout_below="@+id/item_qna_good_img"
+                    android:id="@+id/item_qna_good"
+                    android:layout_width="30dp"
+                    android:layout_height="15dp"
+                    android:gravity="center"
+                    android:textSize="10dp"
+                    android:text="123"/>
+                <TextView
+                    android:layout_toRightOf="@+id/item_qna_good"
+                    android:layout_below="@+id/item_qna_bad_img"
+                    android:id="@+id/item_qna_bad"
+                    android:layout_width="30dp"
+                    android:layout_height="15dp"
+                    android:gravity="center"
+                    android:textSize="10dp"
+                    android:text="123"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

@@ -1,0 +1,61 @@
+package com.example.jangheejun.capptalk;
+
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.Button;
+
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
+public class Database extends AppCompatActivity {
+
+    private DatabaseReference mDatabase;
+    private DatabaseReference mMessageReference;
+
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_database);
+
+        mDatabase = FirebaseDatabase.getInstance().getReference();
+        mMessageReference = FirebaseDatabase.getInstance().getReference("message");
+
+        Button btn = (Button) findViewById(R.id.btn2);
+        btn.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                mDatabase.child("title").setValue("JavaSampleApproach");
+
+                //User user = new User("username","email");
+
+            }
+        });
+
+        Button btn3 = (Button) findViewById(R.id.btn3);
+        btn3.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+
+
+            }
+        });
+
+        /*.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                String value = dataSnapshot.getValue(String.class);
+                Log.d("TAGd", "Value is: " + value);
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+                Log.w("TAGw", "Failed to read value.", databaseError.toException());
+            }
+        });
+        */
+
+    }
+}
